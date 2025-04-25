@@ -56,6 +56,11 @@ Try inputs like:
 
 And get predictions such as: -Loan Status: Bad Risk
 
+## Output of the Project 
+
+<img width="1208" alt="Screenshot 2025-04-25 at 11 21 23 PM" src="https://github.com/user-attachments/assets/26c7a930-5fec-4003-87bc-2db2ccaa4d1d" />
+
+
 
 
 
