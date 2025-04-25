@@ -46,12 +46,17 @@ Try inputs like:
 
 - Age: 35
 - Sex : Male
-- Job: 2  
+- Job: 2
+- Housing: own
+- saving account : moderate
+- checking account : Rich
 - Credit amount: 2000  
 - Duration: 24 months  
 - Purpose: Business
 
 And get predictions such as:
+
+Loan Status: Bad Risk
 
 
 
