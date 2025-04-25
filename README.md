@@ -54,9 +54,9 @@ Try inputs like:
 - Duration: 24 months  
 - Purpose: Business
 
-And get predictions such as:
+And get predictions such as: -Loan Status: Bad Risk
 
-Loan Status: Bad Risk
+
 
 
 
