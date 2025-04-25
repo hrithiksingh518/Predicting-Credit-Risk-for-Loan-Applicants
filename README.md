@@ -44,14 +44,14 @@ These were stacked and trained using historical German credit data, and saved as
 
 Try inputs like:
 
-- Age: 35  
+- Age: 35
+- Sex : Male
 - Job: 2  
 - Credit amount: 2000  
 - Duration: 24 months  
 - Purpose: Business
 
 And get predictions such as:
-
 
 
 
