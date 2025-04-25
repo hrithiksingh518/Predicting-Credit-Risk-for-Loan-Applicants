@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>German Credit Risk Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Loan Risk Prediction</h2>
+    <form method="POST" action="/predict">
+        Age: <input type="number" name="age" required><br><br>
+        Sex:
+        <select name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+        Job (0–3): <input type="number" name="job" min="0" max="3" required><br><br>
+        Housing:
+        <select name="housing">
+            <option value="own">Own</option>
+            <option value="rent">Rent</option>
+            <option value="free">Free</option>
+        </select><br><br>
+        Saving accounts:
+        <select name="savings">
+            <option value="little">Little</option>
+            <option value="moderate">Moderate</option>
+            <option value="quite rich">Quite Rich</option>
+            <option value="rich">Rich</option>
+        </select><br><br>
+        Checking account:
+        <select name="checking">
+            <option value="little">Little</option>
+            <option value="moderate">Moderate</option>
+            <option value="rich">Rich</option>
+        </select><br><br>
+        Credit Amount: <input type="number" name="credit" required><br><br>
+        Duration (months): <input type="number" name="duration" required><br><br>
+        Purpose:
+        <select name="purpose">
+            <option value="car">Car</option>
+            <option value="furniture/equipment">Furniture/Equipment</option>
+            <option value="radio/TV">Radio/TV</option>
+            <option value="domestic appliances">Domestic Appliances</option>
+            <option value="repairs">Repairs</option>
+            <option value="education">Education</option>
+            <option value="business">Business</option>
+            <option value="vacation/others">Vacation/Others</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
